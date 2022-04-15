@@ -1,0 +1,32 @@
+# Docker
+
+dils: docker image ls
+
+dcup: docker-compose up
+dcdn: docker-compose down
+
+# Git
+
+ga: git add
+gc: git commit -v
+gc!: git commit -v --amend
+gp: git push
+
+gb: git branch
+gco: git checkout
+grup: git remote update
+
+gdm: Borra las ramas ya mergeadas
+gdem: Borra todas las ramas excepto master
+
+git config --list | grep alias: Listar aliases
+
+# Tmux
+prefix: ctrl+b
+
+ta: tmux a -t <id>
+tl: tmux ls
+ts: tmux new-session -s <name>
+tksv: tmux kill-server
+
+:rename-session <new-name>
