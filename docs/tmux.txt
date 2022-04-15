@@ -1,0 +1,9 @@
+# Tmux
+prefix: ctrl+b
+
+ta: tmux a -t <id>
+tl: tmux ls
+ts: tmux new-session -s <name>
+tksv: tmux kill-server
+
+:rename-session <new-name>
