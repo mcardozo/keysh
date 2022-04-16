@@ -5,7 +5,7 @@ RESULT=false
 
 if [ "$1" ]; then
     ARG="$(echo "$1" | sed 's/.*/\L&/').txt"  # convierte a miniscula
-    MATCH=$(find $PWD/docs -name $ARG)  # busqueda de archivo
+    MATCH=$(find $DIR/docs -name $ARG)  # busqueda de archivo
     if [ "$MATCH" ] ; then
 	cat "/home/$USER/.keysh/docs/$ARG"
     else
