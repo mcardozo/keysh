@@ -1,5 +1,6 @@
 # Git
 
+ggl: git pull origin "$(git_current_branch)"
 ga: git add
 gc: git commit -v
 gc!: git commit -v --amend
@@ -10,6 +11,6 @@ gco: git checkout
 grup: git remote update
 
 gdm: Borra las ramas ya mergeadas
-gdem: Borra todas las ramas excepto master
+gde: Borra todas las ramas excepto la que se pasa por parámetro
 
 git config --list | grep alias: Listar aliases

@@ -1,6 +1,8 @@
 # Docker
 
 dils: docker image ls
+dvls: docker volume ls
 
+dcb: docker-compose build
 dcup: docker-compose up
 dcdn: docker-compose down
